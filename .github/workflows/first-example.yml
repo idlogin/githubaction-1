@@ -1,0 +1,21 @@
+name: My First Workflow Example
+
+# define a trigger.  can use multiples in an array eg. on: [push, fork]jjj
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+        - name: welcome message
+          run: echo "My first Gihub Actions Job"
+            
+
+        - name: List files
+          run: date && echo  && ls -lrtha
+
+        - name: read message
+          run: cat -v README.md
+
+
+        
