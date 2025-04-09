@@ -15,7 +15,7 @@ jobs:
             
 
         - name: List files
-          run: date && echo  && ls -lrtha
+          run: date && echo  && ls -lrtha && tree .
 
         - name: read message
           run: cat -v README.md
